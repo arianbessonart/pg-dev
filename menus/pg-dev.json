@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle pg-dev",
+        "command": "pg-dev:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "pg-dev",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "pg-dev:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

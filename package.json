@@ -1,0 +1,18 @@
+{
+  "name": "pg-dev",
+  "main": "./lib/pg-dev",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "pg-dev:toggle"
+  },
+  "repository": "https://github.com/atom/pg-dev",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
