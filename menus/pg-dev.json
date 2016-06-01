@@ -1,12 +1,4 @@
 {
-  "context-menu": {
-    "atom-text-editor": [
-      {
-        "label": "Toggle pg-dev",
-        "command": "pg-dev:toggle"
-      }
-    ]
-  },
   "menu": [
     {
       "label": "Packages",
@@ -15,8 +7,16 @@
           "label": "pg-dev",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "pg-dev:toggle"
+              "label": "Watch Files",
+              "command": "pg-dev:watch"
+            },
+            {
+              "label": "Generate Files",
+              "command": "pg-dev:generateFile"
+            },
+            {
+              "label": "Generate Files and Query",
+              "command": "pg-dev:generateFileQuery"
             }
           ]
         }

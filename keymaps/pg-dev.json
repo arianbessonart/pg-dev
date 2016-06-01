@@ -1,5 +1,7 @@
 {
   "atom-workspace": {
+    "ctrl-alt-o": "pg-dev:toggle",
+    "ctrl-alt-o": "pg-dev:toggle",
     "ctrl-alt-o": "pg-dev:toggle"
   }
 }
