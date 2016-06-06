@@ -8,19 +8,19 @@
     ]
   },
   "menu": [
-    {
-      "label": "Packages",
-      "submenu": [
-        {
-          "label": "pg-dev",
-          "submenu": [
-            {
-              "label": "Toggle",
-              "command": "pg-dev:toggle"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+      {
+        "label": "Packages",
+        "submenu": [
+          {
+            "label": "pg-dev",
+            "submenu": [
+              {
+                "label": "Toggle",
+                "command": "pg-dev:toggle"
+              }
+            ]
+          }
+        ]
+      }
+    ]
 }
