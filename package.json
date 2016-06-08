@@ -4,9 +4,6 @@
   "version": "0.0.0",
   "description": "A short description of your package",
   "keywords": [],
-  "activationCommands": {
-    "atom-workspace": "pg-dev:toggle"
-  },
   "repository": "https://github.com/atom/pg-dev",
   "license": "MIT",
   "engines": {
