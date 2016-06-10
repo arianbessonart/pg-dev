@@ -10,10 +10,14 @@ DECLARE
 	v_event_type_service_id integer;
 	v_tracking_number text;
 	v_ts_incoming timestamp with time zone;
+
 BEGIN
 	c_fact_params_data = '';
 
   
+
+  v_oo_fact_id = (get_attempt_status_pm_by_attempt(mdfasdf('fa', get_by_id('name'))))
+
 
 	SELECT m_oo_fact_id, m_notification_type_id, m_phone, m_event_type_service_id, m_user_id, m_tracking_number, m_ts_incoming_ofct, m_origin_id, m_incoming_fact_data, m_specific_fact_data, m_incoming_fact_routine_data FROM md_get_oo_fact_fact_routine_data_by_fact_routine_id(p_operator_id, p_date_partition, p_fact_routine_id) INTO v_oo_fact_id, v_notication_type_id, v_phone, v_event_type_service_id, v_user_id, v_tracking_number, v_ts_incoming, v_origin_id, c_fact_incoming_data, c_fact_specific_data, c_fact_rtn_incoming_data;
 
