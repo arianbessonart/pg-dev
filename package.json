@@ -3,7 +3,9 @@
   "main": "./lib/pg-dev",
   "version": "0.0.0",
   "description": "A short description of your package",
-  "keywords": [],
+  "keywords": [
+    "snippets"
+  ],
   "repository": "https://github.com/atom/pg-dev",
   "license": "MIT",
   "engines": {
