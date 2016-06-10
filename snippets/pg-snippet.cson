@@ -1,0 +1,53 @@
+'.source.pgsql':
+  'CREATE FUNCTION':
+    'prefix': 'create'
+    'body': '''
+      CREATE OR REPLACE FUNCTION ${1:<schemaName>}.${2:<functionName>}($3)
+      RETURNS record AS
+      $BODY$
+      DECLARE
+        $4
+      BEGIN
+        $5
+      END;
+      $BODY$
+        LANGUAGE plpgsql VOLATILE
+        COST 100;
+      ALTER FUNCTION ${1:<schemaName>}.${2:<functionName>}($3)
+        OWNER TO ${6:<user or group>};
+    '''
+    'description': 'Create a new function'
+  'IF':
+    'prefix': 'if'
+    'body': '''
+      IF ${1:<expresion>} THEN
+        $2
+      END IF;
+    '''
+  'IFELSE':
+    'prefix': 'ifelse'
+    'body': '''
+      IF ${1:<expresion>} THEN
+        $2
+      ELSE
+        $3
+      END IF;
+    '''
+  'IFELSIF':
+    'prefix': 'ifelsif'
+    'body': '''
+      IF ${1:<expresion>} THEN
+        $2
+      ELSIF ${3:<expresion>} THEN
+        $4
+      ELSE
+        $5
+      END IF;
+    '''
+  'FOR':
+    'prefix': 'for'
+    'body': '''
+      FOR ${1:<target>} IN ${2:<expresion>} LOOP
+        $3
+      END LOOP;
+    '''
