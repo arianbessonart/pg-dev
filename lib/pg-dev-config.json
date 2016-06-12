@@ -1,0 +1,40 @@
+{
+  "dbUser": {
+    "type":"string",
+    "default":"postgres"
+  },
+  "dbPass": {
+    "type":"string",
+    "default":"postgres"
+  },
+  "dbHost": {
+    "type":"string",
+    "default":"localhost"
+  },
+  "dbName": {
+    "type":"string",
+    "default":"bbplatform"
+  },
+  "dbPort": {
+    "type":"string",
+    "default":"5432"
+  },
+  "outputFile": {
+    "type":"string",
+    "default":"/tmp/output.sql"
+  },
+  "autocompleteDirectories": {
+    "type": "string",
+    "default": "functions",
+    "description": "Split the directories by , (comma)"
+  },
+  "autocompleteExtension": {
+    "type": "string",
+    "default": "sql",
+    "description": "Split the extensions by , (comma)"
+  },
+  "sourceDirectory": {
+    "type":"string",
+    "default":"/projects/bbplat_database/platform/src/bbplatform"
+  }
+}
