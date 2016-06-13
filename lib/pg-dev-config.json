@@ -36,5 +36,9 @@
   "sourceDirectory": {
     "type":"string",
     "default":"/projects/bbplat_database/platform/src/bbplatform"
+  },
+  "alertOnUnusedVariables": {
+    "type":"boolean",
+    "default": true
   }
 }
