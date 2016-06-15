@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle pg-dev",
-        "command": "pg-dev:toggle"
+        "label": "[pg-dev]Generate Select",
+        "command": "pg-dev:generateSelect"
       }
     ]
   },
