@@ -40,5 +40,13 @@
   "alertOnUnusedVariables": {
     "type":"boolean",
     "default": true
+  },
+  "addTheAlterToTheEndsOfTheFunction": {
+    "type":"boolean",
+    "default": false
+  },
+  "ownerFunction": {
+    "type":"string",
+    "default": "r_platform_admin"
   }
 }
