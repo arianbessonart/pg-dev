@@ -1,5 +1,11 @@
 {
   "atom-workspace": {
     "ctrl-space": "pg-dev:toggle"
+  },
+  ".platform-win32 atom-text-editor, .platform-linux atom-text-editor": {
+    "alt-shift-a": "pg-dev:generateSelect"
+  },
+  ".platform-darwin atom-text-editor": {
+    "cmd-shift-a": "pg-dev:generateSelect"
   }
 }
