@@ -1,7 +1,7 @@
 {
   "name": "pg-dev",
   "main": "./lib/pg-dev",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A short description of your package",
   "keywords": [
     "snippets"
