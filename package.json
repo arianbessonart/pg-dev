@@ -1,5 +1,9 @@
 {
   "name": "pg-dev",
+  "author": {
+    "name": "Arian Bessonart",
+    "email": "arianbessonart@gmail.com"
+  },
   "main": "./lib/pg-dev",
   "version": "0.1.2",
   "description": "A short description of your package",
@@ -15,7 +19,6 @@
     "atom-package-deps": "^4.0.1",
     "chokidar": "^1.5.2",
     "fuzzy": "^0.1.1",
-    "hyperclick": "^0.1.1",
     "lodash": "^4.13.1"
   },
   "package-deps": [
