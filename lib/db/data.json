@@ -1,95 +1,277 @@
 {
-	"dataTypes" : [
-		"abstime",
-		"aclitem",
-		"any",
-		"anyarray",
-		"anyelement",
-		"anyenum",
-		"anynonarray",
-		"anyrange",
-		"bigint",
-		"bit",
-		"bit varying",
-		"boolean",
-		"box",
-		"bytea",
-		"char",
-		"character",
-		"character varying",
-		"cid",
-		"cidr",
-		"circle",
-		"cstring",
-		"date",
-		"daterange",
-		"double precision",
-		"event_trigger",
-		"fdw_handler",
-		"ghstore",
-		"gtsvector",
-		"hstore",
-		"inet",
-		"int2vector",
-		"int4range",
-		"int8range",
-		"integer",
-		"internal",
-		"interval",
-		"json",
-		"jsonb",
-		"language_handler",
-		"line",
-		"lseg",
-		"macaddr",
-		"money",
-		"name",
-		"numeric",
-		"numrange",
-		"oid",
-		"oidvector",
-		"opaque",
-		"path",
-		"pg_lsn",
-		"pg_node_tree",
-		"point",
-		"polygon",
-		"real",
-		"record",
-		"refcursor",
-		"regclass",
-		"regconfig",
-		"regdictionary",
-		"regoper",
-		"regoperator",
-		"regproc",
-		"regprocedure",
-		"regtype",
-		"reltime",
-		"smallint",
-		"smgr",
-		"text",
-		"tid",
-		"timestamp without time zone",
-		"timestamp with time zone",
-		"time without time zone",
-		"time with time zone",
-		"tinterval",
-		"trigger",
-		"tsquery",
-		"tsrange",
-		"tstzrange",
-		"tsvector",
-		"txid_snapshot",
-		"unknown",
-		"uuid",
-		"void",
-		"xid",
-		"xml",
-		"breakpoint",
-		"frame",
-		"proxyinfo",
-		"targetinfo",
-		"var"
-	]
+	"dataTypes" : {
+		"abstime":{
+			"description": "absolute, limited-range date and time (Unix system time)"
+		},
+		"aclitem": {
+			"description": "access control list"
+		},
+		"any": {
+			"description": ""
+		},
+		"anyarray": {
+			"description": ""
+		},
+		"anyelement": {
+			"description": ""
+		},
+		"anyenum": {
+			"description": ""
+		},
+		"anynonarray": {
+			"description": ""
+		},
+		"anyrange": {
+			"description": ""
+		},
+		"bigint": {
+			"description": "~18 digit integer, 8-byte storage"
+		},
+		"bit": {
+			"description": "fixed-length bit string"
+		},
+		"bit varying": {
+			"description": "variable-length bit string"
+		},
+		"boolean": {
+			"description": "boolean, 'true'/'false'"
+		},
+		"box": {
+			"description": "geometric box '(lower left,upper right)'"
+		},
+		"bytea": {
+			"description": "variable-length string, binary values escaped"
+		},
+		"char": {
+			"description": "single character"
+		},
+		"character": {
+			"description": "char(length), blank-padded string, fixed storage length"
+		},
+		"character varying": {
+			"description": "varchar(length), non-blank-padded string, variable storage length"
+		},
+		"cid": {
+			"description": "command identifier type, sequence in transaction id"
+		},
+		"cidr": {
+			"description": "network IP address/netmask, network address"
+		},
+		"circle": {
+			"description": "geometric circle '(center,radius)'"
+		},
+		"cstring": {
+			"description": ""
+		},
+		"date": {
+			"description": "date"
+		},
+		"daterange": {
+			"description": "range of dates"
+		},
+		"double precision": {
+			"description": "double-precision floating point number, 8-byte storage"
+		},
+		"event_trigger": {
+			"description": ""
+		},
+		"fdw_handler": {
+			"description": ""
+		},
+		"ghstore": {
+			"description": ""
+		},
+		"gtsvector": {
+			"description": "GiST index internal text representation for text search"
+		},
+		"hstore": {
+			"description": ""
+		},
+		"inet": {
+			"description": "IP address/netmask, host address, netmask optional"
+		},
+		"int2vector": {
+			"description": "array of int2, used in system tables"
+		},
+		"int4range": {
+			"description": "range of integers"
+		},
+		"int8range": {
+			"description": "range of bigints"
+		},
+		"integer": {
+			"description": "-2 billion to 2 billion integer, 4-byte storage"
+		},
+		"internal": {
+			"description": ""
+		},
+		"interval": {
+			"description": "@ <number> <units>, time interval"
+		},
+		"json": {
+			"description": ""
+		},
+		"jsonb": {
+			"description": "Binary JSON"
+		},
+		"language_handler": {
+			"description": ""
+		},
+		"line": {
+			"description": "geometric line"
+		},
+		"lseg": {
+			"description": "geometric line segment '(pt1,pt2)'"
+		},
+		"macaddr": {
+			"description": "XX:XX:XX:XX:XX:XX, MAC address"
+		},
+		"money": {
+			"description": "monetary amounts, $d,ddd.cc"
+		},
+		"name": {
+			"description": "63-byte type for storing system identifiers"
+		},
+		"numeric": {
+			"description": "numeric(precision, decimal), arbitrary precision number"
+		},
+		"numrange": {
+			"description": "range of numerics"
+		},
+		"oid": {
+			"description": "object identifier(oid), maximum 4 billion"
+		},
+		"oidvector": {
+			"description": "array of oids, used in system tables"
+		},
+		"opaque": {
+			"description": ""
+		},
+		"path": {
+			"description": "geometric path '(pt1,...)'"
+		},
+		"pg_lsn": {
+			"description": "PostgreSQL LSN datatype"
+		},
+		"pg_node_tree": {
+			"description": "string representing an internal node tree"
+		},
+		"point": {
+			"description": "geometric point '(x, y)'"
+		},
+		"polygon": {
+			"description": "geometric polygon '(pt1,...)'"
+		},
+		"real": {
+			"description": "single-precision floating point number, 4-byte storage"
+		},
+		"record": {
+			"description": ""
+		},
+		"refcursor": {
+			"description": "reference to cursor (portal name)"
+		},
+		"regclass": {
+			"description": "registered class"
+		},
+		"regconfig": {
+			"description": "registered text search configuration"
+		},
+		"regdictionary": {
+			"description": "registered text search dictionary"
+		},
+		"regoper": {
+			"description": "registered operator"
+		},
+		"regoperator": {
+			"description": "registered operator (with args)"
+		},
+		"regproc": {
+			"description": "registered procedure"
+		},
+		"regprocedure": {
+			"description": "registered procedure (with args)"
+		},
+		"regtype": {
+			"description": "registered type"
+		},
+		"reltime": {
+			"description": "relative, limited-range time interval (Unix delta time)"
+		},
+		"smallint": {
+			"description": "-32 thousand to 32 thousand, 2-byte storage"
+		},
+		"smgr": {
+			"description": "storage manager"
+		},
+		"text": {
+			"description": "variable-length string, no limit specified"
+		},
+		"tid": {
+			"description": "(block, offset), physical location of tuple"
+		},
+		"timestamp without time zone": {
+			"description": "date and time"
+		},
+		"timestamp with time zone": {
+			"description": "date and time with time zone"
+		},
+		"time without time zone": {
+			"description": "time of day"
+		},
+		"time with time zone": {
+			"description": "time of day with time zone"
+		},
+		"tinterval": {
+			"description": "(abstime,abstime), time interval"
+		},
+		"trigger": {
+			"description": ""
+		},
+		"tsquery": {
+			"description": "query representation for text search"
+		},
+		"tsrange": {
+			"description": "range of timestamps without time zone"
+		},
+		"tstzrange": {
+			"description": "range of timestamps with time zone"
+		},
+		"tsvector": {
+			"description": "text representation for text search"
+		},
+		"txid_snapshot": {
+			"description": "txid snapshot"
+		},
+		"unknown": {
+			"description": ""
+		},
+		"uuid": {
+			"description": "UUID datatype"
+		},
+		"void": {
+			"description": ""
+		},
+		"xid": {
+			"description": "transaction id"
+		},
+		"xml": {
+			"description": "XML content"
+		},
+		"breakpoint": {
+			"description": ""
+		},
+		"frame": {
+			"description": ""
+		},
+		"proxyinfo": {
+			"description": ""
+		},
+		"targetinfo": {
+			"description": ""
+		},
+		"var": {
+			"description": ""
+		}
+	}
 }
