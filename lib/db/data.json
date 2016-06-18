@@ -1,274 +1,372 @@
 {
 	"dataTypes" : {
 		"abstime":{
-			"description": "absolute, limited-range date and time (Unix system time)"
+			"description": "absolute, limited-range date and time (Unix system time)",
+			"group": ""
 		},
 		"aclitem": {
-			"description": "access control list"
+			"description": "access control list",
+			"group": ""
 		},
 		"any": {
-			"description": ""
+			"description": "",
+			"group": ""
 		},
 		"anyarray": {
-			"description": ""
+			"description": "",
+			"group": ""
 		},
 		"anyelement": {
-			"description": ""
+			"description": "",
+			"group": ""
 		},
 		"anyenum": {
-			"description": ""
+			"description": "",
+			"group": ""
 		},
 		"anynonarray": {
-			"description": ""
+			"description": "",
+			"group": ""
 		},
 		"anyrange": {
-			"description": ""
+			"description": "",
+			"group": ""
 		},
 		"bigint": {
-			"description": "~18 digit integer, 8-byte storage"
+			"description": "~18 digit integer, 8-byte storage",
+			"group": "Numeric"
 		},
 		"bit": {
-			"description": "fixed-length bit string"
+			"description": "fixed-length bit string",
+			"group": ""
 		},
 		"bit varying": {
-			"description": "variable-length bit string"
+			"description": "variable-length bit string",
+			"group": ""
 		},
 		"boolean": {
-			"description": "boolean, 'true'/'false'"
+			"description": "boolean, 1 byte, 'true'/'false'",
+			"group": ""
 		},
 		"box": {
-			"description": "geometric box '(lower left,upper right)'"
+			"description": "geometric box '(lower left,upper right)'",
+			"group": ""
 		},
 		"bytea": {
-			"description": "variable-length string, binary values escaped"
+			"description": "variable-length string, binary values escaped",
+			"group": "Binary"
 		},
 		"char": {
-			"description": "single character"
+			"description": "single character",
+			"group": "Character"
 		},
 		"character": {
-			"description": "char(length), blank-padded string, fixed storage length"
+			"description": "char(length), blank-padded string, fixed storage length",
+			"group": "Character"
 		},
 		"character varying": {
-			"description": "varchar(length), non-blank-padded string, variable storage length"
+			"description": "varchar(length), non-blank-padded string, variable storage length",
+			"group": "Character"
 		},
 		"cid": {
-			"description": "command identifier type, sequence in transaction id"
+			"description": "command identifier type, sequence in transaction id",
+			"group": ""
 		},
 		"cidr": {
-			"description": "network IP address/netmask, network address"
+			"description": "network IP address/netmask, 7 or 19 bytes",
+			"group": "Network Address"
 		},
 		"circle": {
-			"description": "geometric circle '(center,radius)'"
+			"description": "geometric circle '(center,radius)'",
+			"group": ""
 		},
 		"cstring": {
-			"description": ""
+			"description": "",
+			"group": ""
 		},
 		"date": {
-			"description": "date"
+			"description": "date (no time of day), 4 bytes, 4713 BC - 5874897 AD",
+			"group": "Date/Time"
 		},
 		"daterange": {
-			"description": "range of dates"
+			"description": "range of dates",
+			"group": ""
 		},
 		"double precision": {
-			"description": "double-precision floating point number, 8-byte storage"
+			"description": "double-precision floating point number, 8-byte storage",
+			"group": ""
 		},
 		"event_trigger": {
-			"description": ""
+			"description": "",
+			"group": ""
 		},
 		"fdw_handler": {
-			"description": ""
+			"description": "",
+			"group": ""
 		},
 		"ghstore": {
-			"description": ""
+			"description": "",
+			"group": ""
 		},
 		"gtsvector": {
-			"description": "GiST index internal text representation for text search"
+			"description": "GiST index internal text representation for text search",
+			"group": ""
 		},
 		"hstore": {
-			"description": ""
+			"description": "",
+			"group": ""
 		},
 		"inet": {
-			"description": "IP address/netmask, host address, netmask optional"
+			"description": "IP address/netmask, host address, netmask optional, 7 or 19 bytes",
+			"group": "Network Address"
 		},
 		"int2vector": {
-			"description": "array of int2, used in system tables"
+			"description": "array of int2, used in system tables",
+			"group": ""
 		},
 		"int4range": {
-			"description": "range of integers"
+			"description": "range of integers",
+			"group": ""
 		},
 		"int8range": {
-			"description": "range of bigints"
+			"description": "range of bigints",
+			"group": ""
 		},
 		"integer": {
-			"description": "-2 billion to 2 billion integer, 4-byte storage"
+			"description": "-2 billion to 2 billion integer, 4-byte storage",
+			"group": "Numeric"
 		},
 		"internal": {
-			"description": ""
+			"description": "",
+			"group": ""
 		},
 		"interval": {
-			"description": "@ <number> <units>, time interval"
+			"description": "time interval, 16 bytes, -178000000 years - 178000000 years",
+			"group": "Date/Time"
 		},
 		"json": {
-			"description": ""
+			"description": "",
+			"group": "JSON"
 		},
 		"jsonb": {
-			"description": "Binary JSON"
+			"description": "Binary JSON",
+			"group": "JSON"
 		},
 		"language_handler": {
-			"description": ""
+			"description": "",
+			"group": ""
 		},
 		"line": {
-			"description": "geometric line"
+			"description": "geometric line",
+			"group": ""
 		},
 		"lseg": {
-			"description": "geometric line segment '(pt1,pt2)'"
+			"description": "geometric line segment '(pt1,pt2)'",
+			"group": ""
 		},
 		"macaddr": {
-			"description": "XX:XX:XX:XX:XX:XX, MAC address"
+			"description": "XX:XX:XX:XX:XX:XX, MAC address, 6 bytes",
+			"group": "Network Address"
 		},
 		"money": {
-			"description": "monetary amounts, $d,ddd.cc"
+			"description": "monetary amounts, $d,ddd.cc, 8 bytes storage",
+			"group": "Monetary"
 		},
 		"name": {
-			"description": "63-byte type for storing system identifiers"
+			"description": "63-byte type for storing system identifiers",
+			"group": "Character"
 		},
 		"numeric": {
-			"description": "numeric(precision, decimal), arbitrary precision number"
+			"description": "numeric(precision, decimal), arbitrary precision number",
+			"group": "Numeric"
+		},
+		"decimal": {
+			"description": "up to 131072 digits before the decimal point; up to 16383 digits after the decimal point",
+			"group": "Numeric"
 		},
 		"numrange": {
-			"description": "range of numerics"
+			"description": "range of numerics",
+			"group": ""
 		},
 		"oid": {
-			"description": "object identifier(oid), maximum 4 billion"
+			"description": "object identifier(oid), maximum 4 billion",
+			"group": ""
 		},
 		"oidvector": {
-			"description": "array of oids, used in system tables"
+			"description": "array of oids, used in system tables",
+			"group": ""
 		},
 		"opaque": {
-			"description": ""
+			"description": "",
+			"group": ""
 		},
 		"path": {
-			"description": "geometric path '(pt1,...)'"
+			"description": "geometric path '(pt1,...)'",
+			"group": ""
 		},
 		"pg_lsn": {
-			"description": "PostgreSQL LSN datatype"
+			"description": "PostgreSQL LSN datatype",
+			"group": ""
 		},
 		"pg_node_tree": {
-			"description": "string representing an internal node tree"
+			"description": "string representing an internal node tree",
+			"group": ""
 		},
 		"point": {
-			"description": "geometric point '(x, y)'"
+			"description": "geometric point '(x, y)'",
+			"group": ""
 		},
 		"polygon": {
-			"description": "geometric polygon '(pt1,...)'"
+			"description": "geometric polygon '(pt1,...)'",
+			"group": ""
 		},
 		"real": {
-			"description": "single-precision floating point number, 4-byte storage"
+			"description": "single-precision floating point number, 4-byte storage",
+			"group": "Numeric"
 		},
 		"record": {
-			"description": ""
+			"description": "",
+			"group": ""
 		},
 		"refcursor": {
-			"description": "reference to cursor (portal name)"
+			"description": "reference to cursor (portal name)",
+			"group": ""
 		},
 		"regclass": {
-			"description": "registered class"
+			"description": "registered class",
+			"group": ""
 		},
 		"regconfig": {
-			"description": "registered text search configuration"
+			"description": "registered text search configuration",
+			"group": ""
 		},
 		"regdictionary": {
-			"description": "registered text search dictionary"
+			"description": "registered text search dictionary",
+			"group": ""
 		},
 		"regoper": {
-			"description": "registered operator"
+			"description": "registered operator",
+			"group": ""
 		},
 		"regoperator": {
-			"description": "registered operator (with args)"
+			"description": "registered operator (with args)",
+			"group": ""
 		},
 		"regproc": {
-			"description": "registered procedure"
+			"description": "registered procedure",
+			"group": ""
 		},
 		"regprocedure": {
-			"description": "registered procedure (with args)"
+			"description": "registered procedure (with args)",
+			"group": ""
 		},
 		"regtype": {
-			"description": "registered type"
+			"description": "registered type",
+			"group": ""
 		},
 		"reltime": {
-			"description": "relative, limited-range time interval (Unix delta time)"
+			"description": "relative, limited-range time interval (Unix delta time)",
+			"group": ""
 		},
 		"smallint": {
-			"description": "-32 thousand to 32 thousand, 2-byte storage"
+			"description": "-32768 to +32767 2-byte storage",
+			"group": "Numeric"
 		},
 		"smgr": {
-			"description": "storage manager"
+			"description": "storage manager",
+			"group": ""
 		},
 		"text": {
-			"description": "variable-length string, no limit specified"
+			"description": "variable-length string, no limit specified",
+			"group": "Character"
 		},
 		"tid": {
-			"description": "(block, offset), physical location of tuple"
+			"description": "(block, offset), physical location of tuple",
+			"group": ""
 		},
 		"timestamp without time zone": {
-			"description": "date and time"
+			"description": "both date and time (no time zone), 8 bytes, 4713 BC - 294276 AD",
+			"group": "Date/Time"
 		},
 		"timestamp with time zone": {
-			"description": "date and time with time zone"
+			"description": "both date and time, with time zone, 8 bytes, 4713 BC - 294276 AD",
+			"group": "Date/Time"
 		},
 		"time without time zone": {
-			"description": "time of day"
+			"description": "time of day (no date), 8 bytes, 00:00:00 - 24:00:00",
+			"group": "Date/Time"
 		},
 		"time with time zone": {
-			"description": "time of day with time zone"
+			"description": "times of day only, with time zone, 12 bytes, 00:00:00+1459 - 24:00:00-1459",
+			"group": "Date/Time"
 		},
 		"tinterval": {
-			"description": "(abstime,abstime), time interval"
+			"description": "(abstime,abstime), time interval",
+			"group": ""
 		},
 		"trigger": {
-			"description": ""
+			"description": "",
+			"group": ""
 		},
 		"tsquery": {
-			"description": "query representation for text search"
+			"description": "query representation for text search",
+			"group": "Text Search"
 		},
 		"tsrange": {
-			"description": "range of timestamps without time zone"
+			"description": "range of timestamps without time zone",
+			"group": ""
 		},
 		"tstzrange": {
-			"description": "range of timestamps with time zone"
+			"description": "range of timestamps with time zone",
+			"group": ""
 		},
 		"tsvector": {
-			"description": "text representation for text search"
+			"description": "text representation for text search",
+			"group": "Text Search"
 		},
 		"txid_snapshot": {
-			"description": "txid snapshot"
+			"description": "txid snapshot",
+			"group": ""
 		},
 		"unknown": {
-			"description": ""
+			"description": "",
+			"group": ""
 		},
 		"uuid": {
-			"description": "UUID datatype"
+			"description": "UUID datatype",
+			"group": "UUID"
+		},
+		"varchar": {
+			"description": "variable-length with limit",
+			"group": "Character"
 		},
 		"void": {
-			"description": ""
+			"description": "",
+			"group": ""
 		},
 		"xid": {
-			"description": "transaction id"
+			"description": "transaction id",
+			"group": ""
 		},
 		"xml": {
-			"description": "XML content"
+			"description": "XML content",
+			"group": "XML"
 		},
 		"breakpoint": {
-			"description": ""
+			"description": "",
+			"group": ""
 		},
 		"frame": {
-			"description": ""
+			"description": "",
+			"group": ""
 		},
 		"proxyinfo": {
-			"description": ""
+			"description": "",
+			"group": ""
 		},
 		"targetinfo": {
-			"description": ""
+			"description": "",
+			"group": ""
 		},
 		"var": {
 			"description": ""
