@@ -6,7 +6,7 @@
   },
   "main": "./lib/pg-dev",
   "version": "0.1.9",
-  "description": "A short description of your package",
+  "description": "Package in order to help developing on PostgreSQL (functions)",
   "keywords": [
     "snippets",
     "postgres",
