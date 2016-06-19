@@ -34,7 +34,8 @@
 		},
 		"bigint": {
 			"description": "~18 digit integer, 8-byte storage",
-			"group": "Numeric"
+			"group": "Numeric",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/datatype-numeric.html"
 		},
 		"bit": {
 			"description": "fixed-length bit string",
@@ -46,7 +47,8 @@
 		},
 		"boolean": {
 			"description": "boolean, 1 byte, 'true'/'false'",
-			"group": ""
+			"group": "Boolean",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/datatype-boolean.html"
 		},
 		"box": {
 			"description": "geometric box '(lower left,upper right)'",
@@ -54,19 +56,23 @@
 		},
 		"bytea": {
 			"description": "variable-length string, binary values escaped",
-			"group": "Binary"
+			"group": "Binary",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/datatype-binary.html"
 		},
 		"char": {
 			"description": "single character",
-			"group": "Character"
+			"group": "Character",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/datatype-character.html"
 		},
 		"character": {
 			"description": "char(length), blank-padded string, fixed storage length",
-			"group": "Character"
+			"group": "Character",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/datatype-character.html"
 		},
 		"character varying": {
 			"description": "varchar(length), non-blank-padded string, variable storage length",
-			"group": "Character"
+			"group": "Character",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/datatype-character.html"
 		},
 		"cid": {
 			"description": "command identifier type, sequence in transaction id",
@@ -74,7 +80,8 @@
 		},
 		"cidr": {
 			"description": "network IP address/netmask, 7 or 19 bytes",
-			"group": "Network Address"
+			"group": "Network Address",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/datatype-net-types.html"
 		},
 		"circle": {
 			"description": "geometric circle '(center,radius)'",
@@ -86,11 +93,13 @@
 		},
 		"date": {
 			"description": "date (no time of day), 4 bytes, 4713 BC - 5874897 AD",
-			"group": "Date/Time"
+			"group": "Date/Time",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/datatype-datetime.html"
 		},
 		"daterange": {
 			"description": "range of dates",
-			"group": ""
+			"group": "Range",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/rangetypes.html"
 		},
 		"double precision": {
 			"description": "double-precision floating point number, 8-byte storage",
@@ -118,7 +127,8 @@
 		},
 		"inet": {
 			"description": "IP address/netmask, host address, netmask optional, 7 or 19 bytes",
-			"group": "Network Address"
+			"group": "Network Address",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/datatype-net-types.html"
 		},
 		"int2vector": {
 			"description": "array of int2, used in system tables",
@@ -126,15 +136,18 @@
 		},
 		"int4range": {
 			"description": "range of integers",
-			"group": ""
+			"group": "Range",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/rangetypes.html"
 		},
 		"int8range": {
 			"description": "range of bigints",
-			"group": ""
+			"group": "Range",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/rangetypes.html"
 		},
 		"integer": {
 			"description": "-2 billion to 2 billion integer, 4-byte storage",
-			"group": "Numeric"
+			"group": "Numeric",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/datatype-numeric.html"
 		},
 		"internal": {
 			"description": "",
@@ -142,15 +155,18 @@
 		},
 		"interval": {
 			"description": "time interval, 16 bytes, -178000000 years - 178000000 years",
-			"group": "Date/Time"
+			"group": "Date/Time",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/datatype-datetime.html"
 		},
 		"json": {
 			"description": "",
-			"group": "JSON"
+			"group": "JSON",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/datatype-json.html"
 		},
 		"jsonb": {
 			"description": "Binary JSON",
-			"group": "JSON"
+			"group": "JSON",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/datatype-json.html"
 		},
 		"language_handler": {
 			"description": "",
@@ -166,27 +182,33 @@
 		},
 		"macaddr": {
 			"description": "XX:XX:XX:XX:XX:XX, MAC address, 6 bytes",
-			"group": "Network Address"
+			"group": "Network Address",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/datatype-net-types.html"
 		},
 		"money": {
 			"description": "monetary amounts, $d,ddd.cc, 8 bytes storage",
-			"group": "Monetary"
+			"group": "Monetary",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/datatype-money.html"
 		},
 		"name": {
 			"description": "63-byte type for storing system identifiers",
-			"group": "Character"
+			"group": "Character",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/datatype-character.html"
 		},
 		"numeric": {
 			"description": "numeric(precision, decimal), arbitrary precision number",
-			"group": "Numeric"
+			"group": "Numeric",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/datatype-numeric.html"
 		},
 		"decimal": {
 			"description": "up to 131072 digits before the decimal point; up to 16383 digits after the decimal point",
-			"group": "Numeric"
+			"group": "Numeric",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/datatype-numeric.html"
 		},
 		"numrange": {
 			"description": "range of numerics",
-			"group": ""
+			"group": "Range",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/rangetypes.html"
 		},
 		"oid": {
 			"description": "object identifier(oid), maximum 4 billion",
@@ -222,7 +244,8 @@
 		},
 		"real": {
 			"description": "single-precision floating point number, 4-byte storage",
-			"group": "Numeric"
+			"group": "Numeric",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/datatype-numeric.html"
 		},
 		"record": {
 			"description": "",
@@ -270,7 +293,8 @@
 		},
 		"smallint": {
 			"description": "-32768 to +32767 2-byte storage",
-			"group": "Numeric"
+			"group": "Numeric",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/datatype-numeric.html"
 		},
 		"smgr": {
 			"description": "storage manager",
@@ -278,7 +302,8 @@
 		},
 		"text": {
 			"description": "variable-length string, no limit specified",
-			"group": "Character"
+			"group": "Character",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/datatype-character.html"
 		},
 		"tid": {
 			"description": "(block, offset), physical location of tuple",
@@ -286,19 +311,23 @@
 		},
 		"timestamp without time zone": {
 			"description": "both date and time (no time zone), 8 bytes, 4713 BC - 294276 AD",
-			"group": "Date/Time"
+			"group": "Date/Time",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/datatype-datetime.html"
 		},
 		"timestamp with time zone": {
 			"description": "both date and time, with time zone, 8 bytes, 4713 BC - 294276 AD",
-			"group": "Date/Time"
+			"group": "Date/Time",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/datatype-datetime.html"
 		},
 		"time without time zone": {
 			"description": "time of day (no date), 8 bytes, 00:00:00 - 24:00:00",
-			"group": "Date/Time"
+			"group": "Date/Time",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/datatype-datetime.html"
 		},
 		"time with time zone": {
 			"description": "times of day only, with time zone, 12 bytes, 00:00:00+1459 - 24:00:00-1459",
-			"group": "Date/Time"
+			"group": "Date/Time",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/datatype-datetime.html"
 		},
 		"tinterval": {
 			"description": "(abstime,abstime), time interval",
@@ -310,19 +339,23 @@
 		},
 		"tsquery": {
 			"description": "query representation for text search",
-			"group": "Text Search"
+			"group": "Text Search",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/datatype-textsearch.html"
 		},
 		"tsrange": {
 			"description": "range of timestamps without time zone",
-			"group": ""
+			"group": "Range",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/rangetypes.html"
 		},
 		"tstzrange": {
 			"description": "range of timestamps with time zone",
-			"group": ""
+			"group": "Range",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/rangetypes.html"
 		},
 		"tsvector": {
 			"description": "text representation for text search",
-			"group": "Text Search"
+			"group": "Text Search",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/datatype-textsearch.html"
 		},
 		"txid_snapshot": {
 			"description": "txid snapshot",
@@ -338,7 +371,8 @@
 		},
 		"varchar": {
 			"description": "variable-length with limit",
-			"group": "Character"
+			"group": "Character",
+			"descriptionMoreURL": "https://www.postgresql.org/docs/current/static/datatype-character.html"
 		},
 		"void": {
 			"description": "",
