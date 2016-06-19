@@ -8,7 +8,9 @@
   "version": "0.1.7",
   "description": "A short description of your package",
   "keywords": [
-    "snippets"
+    "snippets",
+    "postgres",
+    "pgsql"
   ],
   "repository": "https://github.com/arianbessonart/pg-dev",
   "license": "MIT",
