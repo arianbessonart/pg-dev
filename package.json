@@ -5,7 +5,7 @@
     "email": "arianbessonart@gmail.com"
   },
   "main": "./lib/pg-dev",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "A short description of your package",
   "keywords": [
     "snippets",
