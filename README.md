@@ -1,5 +1,23 @@
-# pg-dev package
+## pg-dev package
 
-A short description of your package.
+pg-dev is a package for Atom editor, in order to help developing on PostgreSQL (functions).
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+### How?
+Load functions from fs, so you **MUST** have the functions mapped there.
+
+### Features
+* Suggest Functions
+* Suggest Variables
+* Suggest Data Types
+* Suggest Out parameters on function. (i.e: get_test('test')).id)
+* Notify when a variable is unused
+* Add alter owner on the end of the file
+
+
+### Restrictions
+* Every file **MUST HAVE** one and only one function
+* The name of the function must be equal than fileName
+* The name of the function must be can not be longer than 64 characters
+
+### TODO
+* Connect to a database in order to synchronize functions with fs.

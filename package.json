@@ -1,25 +1,33 @@
 {
   "name": "pg-dev",
+  "author": {
+    "name": "Arian Bessonart",
+    "email": "arianbessonart@gmail.com"
+  },
   "main": "./lib/pg-dev",
-  "version": "0.0.0",
-  "description": "A short description of your package",
+  "version": "0.1.10",
+  "description": "Package in order to help developing on PostgreSQL (functions)",
   "keywords": [
-    "snippets"
+    "snippets",
+    "postgres",
+    "pgsql"
   ],
-  "repository": "https://github.com/atom/pg-dev",
+  "repository": "https://github.com/arianbessonart/pg-dev",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
     "atom-space-pen-views": "^2.2.0",
+    "atom-package-deps": "^4.0.1",
     "chokidar": "^1.5.2",
     "emissary": "^1.3.3",
     "fuzzy": "^0.1.1",
     "lodash": "^4.13.1"
   },
   "package-deps": [
-    "hyperclick"
+    "hyperclick",
+    "language-pgsql"
   ],
   "providedServices": {
     "autocomplete.provider": {
