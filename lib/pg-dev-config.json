@@ -13,7 +13,7 @@
   },
   "dbName": {
     "type":"string",
-    "default":"bbplatform"
+    "default":"public"
   },
   "dbPort": {
     "type":"string",
@@ -35,7 +35,7 @@
   },
   "sourceDirectory": {
     "type":"string",
-    "default":"/projects/bbplat_database/platform/src/bbplatform"
+    "default":"/projects/example"
   },
   "alertOnUnusedVariables": {
     "type":"boolean",
@@ -47,6 +47,6 @@
   },
   "ownerFunction": {
     "type":"string",
-    "default": "r_platform_admin"
+    "default": "owner"
   }
 }
