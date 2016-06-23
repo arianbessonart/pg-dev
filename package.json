@@ -5,7 +5,7 @@
     "email": "arianbessonart@gmail.com"
   },
   "main": "./lib/pg-dev",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Package in order to help developing on PostgreSQL (functions)",
   "keywords": [
     "snippets",
