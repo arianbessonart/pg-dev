@@ -17,7 +17,7 @@ Load functions from fs, so you **MUST** have the functions mapped there.
 ### Restrictions
 * Every file **MUST HAVE** one and only one function
 * The name of the function must be equal than fileName
-* The name of the function must be can not be longer than 64 characters
+* The name of the function can not be longer than 64 characters
 
 ### TODO
 * Connect to a database in order to synchronize functions with fs.
