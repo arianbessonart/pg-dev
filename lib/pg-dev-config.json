@@ -1,27 +1,27 @@
 {
   "dbUser": {
-    "type":"string",
-    "default":"postgres"
+    "type": "string",
+    "default": "postgres"
   },
   "dbPass": {
-    "type":"string",
-    "default":"postgres"
+    "type": "string",
+    "default": "postgres"
   },
   "dbHost": {
-    "type":"string",
-    "default":"localhost"
+    "type": "string",
+    "default": "localhost"
   },
   "dbName": {
-    "type":"string",
-    "default":"public"
+    "type": "string",
+    "default": "public"
   },
   "dbPort": {
-    "type":"string",
-    "default":"5432"
+    "type": "string",
+    "default": "5432"
   },
   "outputFile": {
-    "type":"string",
-    "default":"/tmp/output.sql"
+    "type": "string",
+    "default": "/tmp/output.sql"
   },
   "autocompleteDirectories": {
     "type": "string",
@@ -34,19 +34,31 @@
     "description": "Split the extensions by , (comma)"
   },
   "sourceDirectory": {
-    "type":"string",
+    "type": "string",
     "default":"/projects/example"
   },
   "alertOnUnusedVariables": {
-    "type":"boolean",
+    "type": "boolean",
     "default": true
   },
   "addAlterToTheEndsOfTheFunction": {
-    "type":"boolean",
+    "type": "boolean",
+    "default": false
+  },
+  "replaceMultiplesWhitespace": {
+    "type": "boolean",
+    "default": false
+  },
+  "normalizeWhitespace": {
+    "type": "boolean",
+    "default": false
+  },
+  "convertKeywordsUpperCase": {
+    "type": "boolean",
     "default": false
   },
   "ownerFunction": {
-    "type":"string",
+    "type": "string",
     "default": "owner"
   }
 }

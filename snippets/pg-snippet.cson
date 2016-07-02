@@ -44,6 +44,16 @@
         $5
       END IF;
     '''
+  'END':
+    'prefix': 'end'
+    'body': '''
+      END;
+    '''
+  'ENDIF':
+    'prefix': 'endif'
+    'body': '''
+      END IF;
+    '''
   'FOR':
     'prefix': 'for'
     'body': '''
@@ -64,3 +74,18 @@
       $$;
     '''
     'description': 'Create a anonymous function'
+  'SELECT':
+    'prefix': 'select'
+    'body': '''
+      SELECT $1 FROM $2 ${3:WHERE?};
+    '''
+  'SELECTINTO':
+    'prefix': 'selectinto'
+    'body': '''
+      SELECT $1 FROM $2 INTO $3;
+    '''
+  'COALESCE':
+    'prefix': 'coalesce'
+    'body': '''
+      COALESCE($1, $2);
+    '''
