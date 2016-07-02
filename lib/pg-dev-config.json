@@ -41,7 +41,7 @@
     "type":"boolean",
     "default": true
   },
-  "addTheAlterToTheEndsOfTheFunction": {
+  "addAlterToTheEndsOfTheFunction": {
     "type":"boolean",
     "default": false
   },
