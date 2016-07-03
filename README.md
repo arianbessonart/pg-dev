@@ -1,5 +1,7 @@
 ## pg-dev package
 
+[![Join the chat at https://gitter.im/arianbessonart/pg-dev](https://badges.gitter.im/arianbessonart/pg-dev.svg)](https://gitter.im/arianbessonart/pg-dev?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 pg-dev is a package for Atom editor, in order to help developing on PostgreSQL (functions).
 
 ### How?
