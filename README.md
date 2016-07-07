@@ -14,7 +14,9 @@ Load functions from fs, so you **MUST** have the functions mapped there.
 * Suggest Out parameters on function. (i.e: get_test('test')).id)
 * Notify when a variable is unused
 * Add alter owner on the end of the file
+* Function definition (on click):
 
+    ![Function Definition](http://i.imgur.com/7qyA8vW.gif)
 
 ### Restrictions
 * Every file **MUST HAVE** one and only one function
