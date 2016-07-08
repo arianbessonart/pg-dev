@@ -89,3 +89,8 @@
     'body': '''
       COALESCE($1, $2);
     '''
+  'RAISEEXCEPTION':
+    'prefix': 'raiseexcep'
+    'body': '''
+      RAISE EXCEPTION '$1%', $2;
+    '''
