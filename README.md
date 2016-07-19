@@ -5,18 +5,24 @@
 pg-dev is a package for Atom editor, in order to help developing on PostgreSQL (functions).
 
 ### How?
-Load functions from fs, so you **MUST** have the functions mapped there.
+Load functions from file system, so you **MUST** have the functions mapped there.
 
 ### Features
 * Suggest Functions
 * Suggest Variables
 * Suggest Data Types
 * Suggest Out parameters on function. (i.e: get_test('test')).id)
-* Notify when a variable is unused
-* Add alter owner on the end of the file
-* Function definition (on click):
+* Suggest parameters on 'record' variable type
+* Go to function - open in a new tab (hyperclick) - ctrl+click
+* Linter on:
+  * Unused variable
+  * Undeclared variable
+  * Inexistent function
+* Function definition (on click)
+* Snippets: If, ElseIf, Else, For, Create Function, Raise Notice, Raise Exception, do (anonymous function)
 
-    ![Function Definition](http://i.imgur.com/7qyA8vW.gif)
+#### Function Definition
+![Function Definition](./gifs/funcdefinition.gif)
 
 ### Restrictions
 * Every file **MUST HAVE** one and only one function
@@ -24,4 +30,7 @@ Load functions from fs, so you **MUST** have the functions mapped there.
 * The name of the function can not be longer than 64 characters
 
 ### TODO
-* Connect to a database in order to synchronize functions with fs.
+* Connect to a database in order to synchronize functions with file system
+* Improve file parser (need Regex expert)
+* Add more features gifs
+* Add spec/travis-ci
