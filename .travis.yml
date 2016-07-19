@@ -12,7 +12,6 @@ sudo: false
 
 os:
   - linux
-  - osx
 
 env:
   global:
