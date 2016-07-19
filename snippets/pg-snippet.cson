@@ -57,8 +57,22 @@
   'FOR':
     'prefix': 'for'
     'body': '''
-      FOR ${1:<target>} IN ${2:<expresion>} LOOP
+      FOR ${1:<target>} IN ${2:<expresion>}
+      LOOP
         $3
+      END LOOP;
+    '''
+  'FOREACH':
+    'prefix': 'foreach'
+    'body': '''
+      FOREACH ${1:<target>} IN ARRAY ${2:<expresion>}
+      LOOP
+        $3
+      END LOOP;
+    '''
+  'ENDLOOP':
+    'prefix': 'endloop'
+    'body': '''
       END LOOP;
     '''
   'DO':
