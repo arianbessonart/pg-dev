@@ -94,3 +94,8 @@
     'body': '''
       RAISE EXCEPTION '$1%', $2;
     '''
+  'RAISENOTICE':
+    'prefix': 'raisenotice'
+    'body': '''
+      RAISE NOTICE '$1%', $2;
+    '''
