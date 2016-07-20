@@ -22,7 +22,7 @@ Load functions from file system, so you **MUST** have the functions mapped there
 * Snippets: If, ElseIf, Else, For, Create Function, Raise Notice, Raise Exception, do (anonymous function)
 
 #### Function Definition
-![Function Definition](./gifs/funcdefinition.gif)
+![Function Definition](https://raw.githubusercontent.com/arianbessonart/pg-dev/master/gifs/funcdefinition.gif)
 
 ### Restrictions
 * Every file **MUST HAVE** one and only one function
