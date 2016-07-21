@@ -25,6 +25,15 @@ Load functions from file system, so you **MUST** have the functions mapped there
 #### Function Definition
 ![Function Definition](https://raw.githubusercontent.com/arianbessonart/pg-dev/master/gifs/funcdefinition.gif)
 
+#### Linter
+![Linter](https://raw.githubusercontent.com/arianbessonart/pg-dev/master/gifs/linter.gif)
+
+#### Suggest Function Definition
+![Suggest Function Definition](https://raw.githubusercontent.com/arianbessonart/pg-dev/master/gifs/suggestfunction.gif)
+
+#### Suggest Properties on record data type
+![Suggest Properties Record](https://raw.githubusercontent.com/arianbessonart/pg-dev/master/gifs/suggestrecordvariable.gif)
+
 ### Restrictions
 * Every file **MUST HAVE** one and only one function
 * The name of the function must be equal than fileName
