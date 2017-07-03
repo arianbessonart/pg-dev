@@ -8,6 +8,18 @@ pg-dev is a package for Atom editor, in order to help developing on PostgreSQL (
 ### How?
 Load functions from file system, so you **MUST** have the functions mapped there.
 
+### Usage
+* Set main directory path: must be an absolute path on package config.
+
+  ![Main Workspace](https://raw.githubusercontent.com/arianbessonart/pg-dev/master/img/main-workspace.png)
+
+
+* Set workspace directories (support multiples, splitted by comma) on package config. By default, the functions must go inside of "functions" directory (The package must read this files as functions).
+
+  ![Function Workspace](https://raw.githubusercontent.com/arianbessonart/pg-dev/master/img/config-workspace.png)
+
+
+
 ### Features
 * Suggest Functions
 * Suggest Variables
