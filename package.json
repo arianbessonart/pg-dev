@@ -15,9 +15,9 @@
   "scripts": {
     "eslint": "./node_modules/eslint/bin/eslint.js ./lib"
   },
-  "pre-commit": [
-    "eslint"
-  ],
+  "pre-commit": {
+    "run": "eslint"
+  },
   "repository": "https://github.com/arianbessonart/pg-dev",
   "license": "MIT",
   "engines": {
