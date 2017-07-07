@@ -12,6 +12,12 @@
     "postgres",
     "pgsql"
   ],
+  "scripts": {
+    "eslint": "./node_modules/eslint/bin/eslint.js ./lib"
+  },
+  "pre-commit": [
+    "eslint"
+  ],
   "repository": "https://github.com/arianbessonart/pg-dev",
   "license": "MIT",
   "engines": {
@@ -49,5 +55,8 @@
         "1.0.0": "provideLinter"
       }
     }
+  },
+  "devDependencies": {
+    "pre-commit": "^1.2.2"
   }
 }
