@@ -6,6 +6,13 @@ sudo: false
 
 os:
   - linux
+  - osx
+
+install:
+  - npm install eslint
+
+script:
+  - ./node_modules/eslint/bin/eslint.js ./lib
 
 env:
   global:
