@@ -12,20 +12,27 @@
     "postgres",
     "pgsql"
   ],
+  "scripts": {
+    "eslint": "./node_modules/eslint/bin/eslint.js ./lib"
+  },
+  "pre-commit": {
+    "run": "eslint"
+  },
   "repository": "https://github.com/arianbessonart/pg-dev",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "atom-linter": "^6.0.0",
     "atom-package-deps": "^4.0.1",
     "atom-space-pen-views": "^2.2.0",
     "chokidar": "^1.5.2",
     "emissary": "^1.3.3",
+    "eslint": "^4.1.1",
     "fuzzy": "^0.1.1",
     "lodash": "^4.13.1",
-    "string": "^3.3.1",
-    "atom-linter": "^6.0.0"
+    "string": "^3.3.1"
   },
   "package-deps": [
     "hyperclick",
@@ -48,5 +55,8 @@
         "1.0.0": "provideLinter"
       }
     }
+  },
+  "devDependencies": {
+    "pre-commit": "^1.2.2"
   }
 }

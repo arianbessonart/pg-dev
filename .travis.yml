@@ -7,6 +7,12 @@ sudo: false
 os:
   - linux
 
+install:
+  - npm install eslint
+
+script:
+  - ./node_modules/eslint/bin/eslint.js ./lib
+
 env:
   global:
     - APM_TEST_PACKAGES=""
